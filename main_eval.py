@@ -108,7 +108,7 @@ def validate(test_loader, model, criterion, epoch):
     avg_psnr = AverageMeter()
     avg_ssim = AverageMeter()
 
-    value_out_path = os.path.join(opt.result_dir, "eval_result.txt")
+    value_out_path = os.path.join(opt.result_dir, "eval_log.txt")
     F = open(value_out_path,'a')
 
     model.eval()

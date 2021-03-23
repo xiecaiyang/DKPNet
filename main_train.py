@@ -256,7 +256,7 @@ def validate(test_loader, model, criterion, epoch):
 
     print("--- Epoch %d  --------- Average PSNR %.3f ---" %(epoch, avg_psnr.avg))
 
-    value_out_path = os.path.join(opt.ckpt_dir, "num.txt")
+    value_out_path = os.path.join(opt.ckpt_dir, "eval_log.txt")
     F = open(value_out_path,'a')
     F.write("Epoch %d: PSNR %.3f ssim %.4f\n"%(epoch,avg_psnr.avg,avg_ssim.avg))
     F.close()
