@@ -33,7 +33,8 @@ Network Structure:
 ![Network Structure](./screenshot/network_structure.png "Network Structure")
 
 
-The quantitative results (PSNR) are tested on BSD68 and Kodak24.<br>
+The quantitative results (PSNR) are tested on BSD68 and Kodak24.
+----
 BSD68:
 
 |Noise Level|30|50|70|
@@ -58,8 +59,19 @@ Kodak24:
 |FFDNet	|29.70	|27.63	|26.34|
 |DKPNet	|29.78	|27.73	|26.48|
 
-Visual Performance:
+Visual Performance
 -----
 ![visual bsd68](./screenshot/Visual_BSD68.png "visual bsd68")
----
+***
 ![visual kodak24](./screenshot/Visual_Kodak24.png "visual kodak24")
+
+Parameter comparison among models
+----
+
+Network|	IRCNN|	DnCNN|	FFDNet|	MemNet|	DKPNet
+--|--|--|--|--|--
+Parameters quantity|	182K|	543K|	474K|	2842K|	1245K
+Inference memory|	451MB|	1763MB|	264M|	12GB|	1373MB
+FLOPs|	53G|	159G|	35G|	832G|	364G
+PSNR|	28.26|	28.36|	28.39|	28.43|	28.45
+
